@@ -1,0 +1,15 @@
+{
+  "username":"chethan.kr@stryker.com",
+  "password":"Q2hldGh1QDI2
+",
+   
+   "emailserverdata": {
+   
+    "mailDebug":true,
+    "mail.smtp.auth":true,
+    "mail.smtp.starttls.enable":false,
+    "mail.smtp.host":"syksmtp.stryker.com",
+    "mail.smtp.port":25,
+    },
+
+  }
