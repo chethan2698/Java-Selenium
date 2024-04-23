@@ -142,6 +142,29 @@ public class BasicJavaPrograms {
 	
 	@Test
 	public void Test() {
+		
+		String value = "FireFox";
+		
+		switch(value) {
+		
+		case "google":
+			System.out.println("Google");
+			break;
+		
+		case "Edge":
+			System.out.println("Edge");
+			break;
+			
+		case "FireFox":
+			System.out.println("FireFox");
+			break;
+			
+		default:
+			System.out.println("default");
+			break;
+		
+		
+		}
 
 	}
 

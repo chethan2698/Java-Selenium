@@ -3,6 +3,7 @@ import java.awt.Graphics2D;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -37,7 +38,7 @@ public class LaunchBrowser {
 		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
-
+		options.addExtensions(new File("D:\\WorkSpaces\\WorkSpace - Chethan\\Automation\\Salesforce-inspector.crx"));
 		// 1st way : give the chrome exe path
 //		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
 //		ChromeDriver driver = new ChromeDriver(options);
@@ -57,10 +58,28 @@ public class LaunchBrowser {
 
 
 		// launch url
-		driver.get("https://stryker--crew.sandbox.my.site.com/CrewCertificationWaivers/s/?recordId=aHiDP0000008PRi0AM");
+		driver.get("https://test.salesforce.com/");
 
-		WebElement WebElement = driver.findElement(By.xpath("//canvas[@name=\"canvasItem\"]"));
-		Actions actions = new Actions(driver);
+		driver.switchTo().newWindow(WindowType.TAB);
+		
+		driver.get("https://www.google.com/");
+		
+		String singleHandle = driver.getWindowHandle();
+		Set<String> multiplehandles = driver.getWindowHandles();
+		
+		System.out.println(singleHandle);
+		System.out.println(multiplehandles);
+		
+		
+		for(String handle : multiplehandles) {
+			
+			if(!handle.equals(singleHandle)) {
+				driver.switchTo().window(handle);
+				System.out.println(driver.getTitle());
+				break;
+			}
+			
+		}
 
 		//C
 //		actions.moveToElement(WebElement).clickAndHold();
@@ -100,40 +119,41 @@ public class LaunchBrowser {
 //		actions.moveByOffset(0, 15).build().perform();
 //		actions.moveByOffset(2, 0).build().perform();
 		
-		actions.moveToElement(WebElement).clickAndHold();
-		//C		
-		actions.moveByOffset(-20, 0).build().perform();
-		actions.moveByOffset(-5, 5).build().perform();
-		actions.moveByOffset(0, 15).build().perform();
-		actions.moveByOffset(5, 5).build().perform();
-		actions.moveByOffset(28, 0).build().perform();
-		
-		//R
-		actions.moveByOffset(0, -25).build().perform();
-		actions.moveByOffset(15, 0).build().perform();
-		actions.moveByOffset(5, 5).build().perform();
-		actions.moveByOffset(0, 5).build().perform();
-		actions.moveByOffset(-5, 5).build().perform();
-		actions.moveByOffset(-10, 0).build().perform();
-		actions.moveByOffset(15, 10).build().perform();
-		actions.moveByOffset(5, 0).build().perform();
-		
-		//E
-		actions.moveByOffset(20, 0).build().perform();
-		actions.moveByOffset(-20, 0).build().perform();
-		actions.moveByOffset(0, -12).build().perform();
-		actions.moveByOffset(10, 0).build().perform();
-		actions.moveByOffset(-10, 0).build().perform();
-		actions.moveByOffset(0, -13).build().perform();
-		actions.moveByOffset(20, 0).build().perform();
-		
-		//W
-		actions.moveByOffset(8, 25).build().perform();
-		actions.moveByOffset(10, -15).build().perform();
-		actions.moveByOffset(10, 15).build().perform();
-		actions.moveByOffset(8, -25).build().perform();	
-		
-		actions.release().build().perform();
+//		Actions actions = new Actions(driver);
+////		actions.moveToElement(WebElement).clickAndHold();
+//		//C		
+//		actions.moveByOffset(-20, 0).build().perform();
+//		actions.moveByOffset(-5, 5).build().perform();
+//		actions.moveByOffset(0, 15).build().perform();
+//		actions.moveByOffset(5, 5).build().perform();
+//		actions.moveByOffset(28, 0).build().perform();
+//		
+//		//R
+//		actions.moveByOffset(0, -25).build().perform();
+//		actions.moveByOffset(15, 0).build().perform();
+//		actions.moveByOffset(5, 5).build().perform();
+//		actions.moveByOffset(0, 5).build().perform();
+//		actions.moveByOffset(-5, 5).build().perform();
+//		actions.moveByOffset(-10, 0).build().perform();
+//		actions.moveByOffset(15, 10).build().perform();
+//		actions.moveByOffset(5, 0).build().perform();
+//		
+//		//E
+//		actions.moveByOffset(20, 0).build().perform();
+//		actions.moveByOffset(-20, 0).build().perform();
+//		actions.moveByOffset(0, -12).build().perform();
+//		actions.moveByOffset(10, 0).build().perform();
+//		actions.moveByOffset(-10, 0).build().perform();
+//		actions.moveByOffset(0, -13).build().perform();
+//		actions.moveByOffset(20, 0).build().perform();
+//		
+//		//W
+//		actions.moveByOffset(8, 25).build().perform();
+//		actions.moveByOffset(10, -15).build().perform();
+//		actions.moveByOffset(10, 15).build().perform();
+//		actions.moveByOffset(8, -25).build().perform();	
+//		
+//		actions.release().build().perform();
 
 	}		
 	

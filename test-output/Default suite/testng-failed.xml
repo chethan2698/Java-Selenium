@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Java.BasicJavaPrograms">
+      <class name="Automation.loginAuthenticationPopup">
         <methods>
-          <include name="PrimeNumber"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- Java.BasicJavaPrograms -->
+      </class> <!-- Automation.loginAuthenticationPopup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

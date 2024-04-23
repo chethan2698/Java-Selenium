@@ -26,6 +26,7 @@ public class loginAuthenticationPopup {
 		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
+		//options.setBrowserVersion("117");
 		//options.addArguments("--headless=new");// selenium 4.18
 		
 		ChromeDriver driver = new ChromeDriver(options);
