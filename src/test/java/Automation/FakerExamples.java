@@ -18,6 +18,7 @@ public class FakerExamples {
 		System.out.println(lastName);
 		System.out.println(address);
 		System.out.println(phoneNumber);
+		faker.country().capital();
 		
 //		The Faker class provides many more methods for generating different types of fake data, such as:
 		 

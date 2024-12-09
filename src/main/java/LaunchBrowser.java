@@ -44,11 +44,11 @@ public class LaunchBrowser {
 //		ChromeDriver driver = new ChromeDriver(options);
 		
 		// 2nd way through Webdriver manager		
-//		WebDriverManager.chromedriver().setup();
-//		WebDriver driver = new ChromeDriver(options);
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver(options);
 		
 		// 3rd way through selenium manager
-		ChromeDriver driver = new ChromeDriver(options);
+//		ChromeDriver driver = new ChromeDriver(options);
 		
 		driver.manage().window().maximize();		
 		//implicit wait
@@ -80,7 +80,7 @@ public class LaunchBrowser {
 			}
 			
 		}
-
+		
 		//C
 //		actions.moveToElement(WebElement).clickAndHold();
 //		actions.moveByOffset(-15, 0).build().perform();

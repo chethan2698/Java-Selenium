@@ -162,8 +162,7 @@ public class BasicJavaPrograms {
 		default:
 			System.out.println("default");
 			break;
-		
-		
+	
 		}
 
 	}

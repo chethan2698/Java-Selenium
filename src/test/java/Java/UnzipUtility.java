@@ -17,8 +17,8 @@ import java.util.zip.ZipInputStream;
 public class UnzipUtility {
 	
 	 public static void main(String[] args) {
-	        String zipFilePath = "D:\\Chethan\\MultiLocaleUIAutomation-master.zip";
-	        String destDirectory = "D:\\Chethan";
+	        String zipFilePath = "C:/Users/" + System.getProperty("user.name") + "/Downloads/cgim_itemasmade_07032024";
+	        String destDirectory = "C:/Users/" + System.getProperty("user.name") + "/Downloads/";
 	        UnzipUtility unzipper = new UnzipUtility();
 	        try {
 	            unzipper.unzip(zipFilePath, destDirectory);

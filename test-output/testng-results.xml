@@ -1,67 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-19T11:20:13 IST" name="Default suite" finished-at="2024-04-19T11:20:41 IST" duration-ms="27758">
+  <suite started-at="2024-12-06T10:51:46 IST" name="Default suite" finished-at="2024-12-06T10:51:47 IST" duration-ms="184">
     <groups>
     </groups>
-    <test started-at="2024-04-19T11:20:13 IST" name="Default test" finished-at="2024-04-19T11:20:41 IST" duration-ms="27758">
-      <class name="Automation.loginAuthenticationPopup">
-        <test-method signature="login()[pri:0, instance:Automation.loginAuthenticationPopup@101952da]" started-at="2024-04-19T11:20:13 IST" name="login" finished-at="2024-04-19T11:20:41 IST" duration-ms="27695" status="FAIL">
-          <exception class="org.openqa.selenium.devtools.DevToolsException">
-            <message>
-              <![CDATA[You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.18.1` where `NN` matches the major version of the browser you're using.
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: DevTools Connection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.devtools.DevToolsException: You are using a no-op implementation of the CDP. The most likely reason for this is that Selenium was unable to find an implementation of the CDP protocol that matches your browser. Please be sure to include an implementation on the classpath, possibly by adding a new (maven) dependency of `org.seleniumhq.selenium:selenium-devtools-vNN:4.18.1` where `NN` matches the major version of the browser you're using.
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: DevTools Connection
-at org.openqa.selenium.devtools.noop.NoOpDomains.target(NoOpDomains.java:60)
-at org.openqa.selenium.devtools.DevTools.findTarget(DevTools.java:171)
-at org.openqa.selenium.devtools.DevTools.createSession(DevTools.java:131)
-at org.openqa.selenium.devtools.DevTools.createSessionIfThereIsNotOne(DevTools.java:112)
-at org.openqa.selenium.chromium.ChromiumDriver.register(ChromiumDriver.java:290)
-at org.openqa.selenium.HasAuthentication.register(HasAuthentication.java:47)
-at Automation.loginAuthenticationPopup.login(loginAuthenticationPopup.java:50)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.devtools.DevToolsException -->
+    <test started-at="2024-12-06T10:51:46 IST" name="Default test" finished-at="2024-12-06T10:51:47 IST" duration-ms="184">
+      <class name="Java.BasicJavaPrograms">
+        <test-method signature="PrimeNumber()[pri:0, instance:Java.BasicJavaPrograms@550dbc7a]" started-at="2024-12-06T10:51:46 IST" name="PrimeNumber" finished-at="2024-12-06T10:51:46 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- Automation.loginAuthenticationPopup -->
+        </test-method> <!-- PrimeNumber -->
+      </class> <!-- Java.BasicJavaPrograms -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -43,12 +43,12 @@ public class loginAuthenticationPopup {
 		String url = "the-internet.herokuapp.com/basic_auth" ;
 		
 		// append username and password to url
-//		String url1 = "https://"+username+":"+password+"@"+url;
-//		driver.get(url1);
+		String url1 = "https://"+username+":"+password+"@"+url;
+		driver.get(url1);
 		
 		// using HasAuthenticator, UsernameAndPassword
-		((HasAuthentication) driver).register(() -> new UsernameAndPassword(username, password));
-		driver.get("https://the-internet.herokuapp.com/basic_auth");
+//		((HasAuthentication) driver).register(() -> new UsernameAndPassword(username, password));
+//		driver.get("https://the-internet.herokuapp.com/basic_auth");
 		
 		System.out.println("logged in");
 	}

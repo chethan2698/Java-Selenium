@@ -7,8 +7,8 @@ public class Resource_Bundle {
 
 	public static void main(String[] args) {
 
-		String lang = "ge";
-		String country = "GE";
+		String lang = "en";
+		String country = "US";
 		try {
 			Locale l = new Locale(lang, country);
 
